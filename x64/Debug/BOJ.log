@@ -1,2 +1,4 @@
-﻿  16917.cpp
+﻿  2864.cpp
+C:\Users\sin37\source\repos\BOJ\2864.cpp(13,10): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\sin37\source\repos\BOJ\2864.cpp(25,10): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   BOJ.vcxproj -> C:\Users\sin37\source\repos\BOJ\x64\Debug\BOJ.exe
