@@ -1,3 +1,2 @@
-﻿  1076.cpp
-C:\Users\sin37\source\repos\BOJ\1076.cpp(26,33): warning C4244: '*=': 'double'에서 '__int64'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  3053.cpp
   BOJ.vcxproj -> C:\Users\sin37\source\repos\BOJ\x64\Debug\BOJ.exe
