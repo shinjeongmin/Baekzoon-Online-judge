@@ -35,7 +35,7 @@ void eratos(int n) {
 	
 	for (int i = 2; i <= static_cast<int>(n / 2); i++) 
 	{
-		if (isPrimeVec[i] == true) 
+		if (isPrimeVec[i] == true)
 		{ 
 			// 소수인 수만
 			for (int j = 2; i * j <= n; j++) 

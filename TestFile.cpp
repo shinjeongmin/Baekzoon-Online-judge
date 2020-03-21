@@ -1,14 +1,34 @@
 //#include <iostream>
 //#include <vector>
+//#include <algorithm>
 //using namespace std;
-//vector<int> vec;
+//int arr[10][10];
+//int arr2[10][10];
+//void printArr(int N, int M);
+//void printArr2(int N, int M);
 //
 //int main() {
-//	vec.assign(3, 0);
+//	arr[0][0] = arr[0][1] = 1;
+//	copy(&arr[0][0], &arr[0][0] + 10 * 10,&arr2[0][0]);
+//	printArr2(10, 10);
+//}
 //
-//	vector<int>::iterator iter = vec.begin();
+//void printArr(int N, int M) {
+//	// 배열 출력함수
+//	for (int i = 0; i < N; i++) {
+//		for (int j = 0; j < M; j++) {
+//			cout << arr[i][j] << " ";
+//		}
+//		cout << "\n";
+//	}
+//}
 //
-//	for (int i = 0; i < vec.size(); i++) {
-//		cout << vec[i] << endl;
+//void printArr2(int N, int M) {
+//	// 배열 출력함수
+//	for (int i = 0; i < N; i++) {
+//		for (int j = 0; j < M; j++) {
+//			cout << arr2[i][j] << " ";
+//		}
+//		cout << "\n";
 //	}
 //}
