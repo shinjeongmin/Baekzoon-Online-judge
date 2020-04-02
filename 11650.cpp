@@ -8,53 +8,27 @@ int main() {
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-	vector<int> vec1, vec2;
+	vector<vector<int>> vec;
 	int N;
 	cin >> N;
 
-	for (int i = 0; i < N; i++) 
-		// 각 벡터에 값 저장
+	for (int i = 0; i < N; i++)
 	{
-		int x, y;
-		cin >> x >> y;
-		vec1.push_back(x);
-		vec2.push_back(y);
+		int tmp1, tmp2;
+		cin >> tmp1 >> tmp2;
+		
+		// ***주의*** 2차원벡터에 push_back할때는 벡터를 넣어야함
+		vector<int> tmpvec;
+		tmpvec.push_back(tmp1); // 첫번째 자리에 tmp1
+		tmpvec.push_back(tmp2); // 두번째 자리에 tmp2
+
+		vec.push_back(tmpvec); // [0],[1]이 들어있는 벡터를 2차원 벡터에
 	}
 
-	int temp;
-
-	for (int j = 0; j < N - 1; j++)
-	{
-		for (int i = 0; i < N - 1; i++) // x자리 버블정렬
-		{
-			if (vec1[i] > vec1[i + 1])
-			{
-				temp = vec1[i];
-				vec1[i] = vec1[i + 1];
-				vec1[i + 1] = temp;
-
-				temp = vec2[i];
-				vec2[i] = vec2[i + 1];
-				vec2[i + 1] = temp;
-			}
-
-			// x자리가 같을 때만
-			if (vec1[i] == vec1[i + 1] &&
-				vec2[i] > vec2[i + 1])
-			{
-				temp = vec1[i];
-				vec1[i] = vec1[i + 1];
-				vec1[i + 1] = temp;
-
-				temp = vec2[i];
-				vec2[i] = vec2[i + 1];
-				vec2[i + 1] = temp;
-			}
-		}
-	}
+	sort(vec.begin(), vec.end());
 
 	for (int i = 0; i < N; i++)
 	{
-		cout << vec1[i] << " " << vec2[i] << "\n";
+		cout << vec[i][0] << " " << vec[i][1] << "\n";
 	}
 }
