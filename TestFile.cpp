@@ -9,25 +9,21 @@
 //	cin.tie(NULL);
 //	cout.tie(NULL);
 //
-//	vector<int> v;
-//	int max, min;
-//	int temp;
-//	cin >> temp;
-//	while (temp != 0)
+//	int a, i{ 1 };
+//	cin >> a;
+//
+//	while(a != 1)
 //	{
-//		v.push_back(temp);
-//		cin >> temp;
+//		i++;
+//		if (a % 2 != 0)
+//		{
+//			a = a * 3 + 1;
+//		}
+//		else
+//			a /= 2;
+//
+//		cout << a << "\t" << i <<endl;
 //	}
-//
-//	max = v[0];
-//	min = v[0];
-//
-//	for (int i = 0; i < v.size(); i++) {
-//		if (max < v[i])
-//			max = v[i];
-//		if (min > v[i])
-//			min = v[i];
-//	}
-//
-//	cout << max << " " << min;
 //}
+///*
+//*/
