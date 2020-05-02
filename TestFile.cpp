@@ -6,17 +6,20 @@
 //#include <deque>
 //using namespace std;
 //
-//
 //int main() {
 //	ios_base::sync_with_stdio(false);
 //	cin.tie(NULL);
 //	cout.tie(NULL);
 //
-//	deque<int> dq;
-//	for (int i = 0; i < 10; i++)
-//		dq.push_back(i);
+//	vector<int> vec;
+//	//vector<int>::iterator iter = vec.begin();
 //
-//	cout << dq[2];
+//	vec.push_back(0);
+//	vec.push_back(1);
+//	vec.insert(vec.begin(),2);
+//	
+//	for (auto i : vec)
+//		cout << i << " ";
 //}
 ///*
 //*/
