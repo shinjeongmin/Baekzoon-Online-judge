@@ -4,6 +4,7 @@
 //#include <string>
 //#include <iomanip>
 //#include <deque>
+//#include <utility>
 //using namespace std;
 //
 //int main() {
@@ -11,15 +12,24 @@
 //	cin.tie(NULL);
 //	cout.tie(NULL);
 //
-//	vector<int> vec;
-//	//vector<int>::iterator iter = vec.begin();
+//	vector<string> vec;
+//	vector<string>::iterator it_vec = vec.begin();
 //
-//	vec.push_back(0);
-//	vec.push_back(1);
-//	vec.insert(vec.begin(),2);
+//	string str;
+//	for(int i = 0; i < 3; i++)
+//	{
+//		cin >> str;
+//		vec.push_back(str);
+//	}
+//
+//	cout << "Ã£±â : ";
+//	cin >> str;
 //	
-//	for (auto i : vec)
-//		cout << i << " ";
+//	try
+//	{
+//		it_vec = find(vec.begin(), vec.end(), str);
+//		cout << *it_vec;
+//	}
 //}
 ///*
 //*/
