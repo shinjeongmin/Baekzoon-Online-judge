@@ -1,19 +1,27 @@
 //#include <iostream>
+//#include <deque>
+//#include <queue>
 //#include <vector>
 //#include <algorithm>
 //#include <string>
-//#include <iomanip>
-//#include <deque>
 //#include <utility>
 //using namespace std;
 //
-//int main() {
-//	ios_base::sync_with_stdio(false);
-//	cin.tie(NULL);
-//	cout.tie(NULL);
+//bool check[1000000];
 //
-//	string s;
-//	getline(cin, s);
+//int main() {
+//	ios_base::sync_with_stdio;
+//	cin.tie(0);
+//
+//	priority_queue<int, vector<int>, greater<int>> min_heap; // √÷º“»¸
+//	priority_queue<int, vector<int>, less<int>> max_heap; // √÷¥Î»¸
+//	int k;
+//	cin >> k;
+//
+//	for (int i = 0; i < k; i++)
+//	{
+//		int tmp;
+//		cin >> tmp;
+//		min_heap.push(tmp);
+//	}
 //}
-///*
-//*/
