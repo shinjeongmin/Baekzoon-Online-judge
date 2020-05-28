@@ -12,24 +12,8 @@
 //	cin.tie(NULL);
 //	cout.tie(NULL);
 //
-//	vector<string> vec;
-//	vector<string>::iterator it_vec = vec.begin();
-//
-//	string str;
-//	for(int i = 0; i < 3; i++)
-//	{
-//		cin >> str;
-//		vec.push_back(str);
-//	}
-//
-//	cout << "Ã£±â : ";
-//	cin >> str;
-//	
-//	try
-//	{
-//		it_vec = find(vec.begin(), vec.end(), str);
-//		cout << *it_vec;
-//	}
+//	string s;
+//	getline(cin, s);
 //}
 ///*
 //*/
