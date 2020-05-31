@@ -198,5 +198,11 @@
     <ClCompile Include="bfs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="11724.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="11123.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
