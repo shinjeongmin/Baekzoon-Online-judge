@@ -14,7 +14,7 @@ using namespace std;
 int N;
 bool check[101][101][101];
 int height[101][101][101];
-int Max{ INT_MIN }, Min{ INT_MAX }; //영역높이의 최대, 최소값;
+int Max{ INT_MIN }, Min{ INT_MAX }; //영역높이의 최대, 최소값
 vector<int> NumOfArea; //안전한 영역의 개수들
 int dx[] = { 0,0,-1,1 }, dy[] = { -1,1,0,0 };
 

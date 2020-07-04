@@ -1,32 +1,39 @@
-//#include <iostream>
-//#include <deque>
-//#include <queue>
-//#include <stack>
-//#include <vector>
-//#include <algorithm>
-//#include <string>
-//#include <utility>
-//#include <set>
-//#include <unordered_set>
+//#include<iostream>
+//#include<vector>
+//#define NODE 4
 //using namespace std;
 //
-//int check[10][10] = { 0, };
+///* int graph[NODE][NODE] = {
+//   {0, 1, 1, 0},
+//   {0, 0, 1, 0},
+//   {1, 0, 0, 1},
+//   {0, 0, 0, 0}
+//}; */
+//
+//int graph[NODE][NODE] = {
+//   {1, 0, 1, 0},
+//   {1, 0, 0, 1},
+//   {0, 1, 1, 0},
+//   {0, 1, 0, 0}
+//};
+//
+//int result[NODE][NODE];
+//
+//void transClosure() {
+//    for (int i = 0; i < NODE; i++)
+//        for (int j = 0; j < NODE; j++)
+//            result[i][j] = graph[i][j];    //initially copy the graph to the result matrix
+//    for (int k = 0; k < NODE; k++)
+//        for (int i = 0; i < NODE; i++)
+//            for (int j = 0; j < NODE; j++)
+//                result[i][j] = result[i][j] || (result[i][k] && result[k][j]);
+//    for (int i = 0; i < NODE; i++) {          //print the result matrix
+//        for (int j = 0; j < NODE; j++)
+//            cout << result[i][j] << " ";
+//        cout << endl;
+//    }
+//}
 //
 //int main() {
-//	ios_base::sync_with_stdio;
-//	cin.tie(0);
-//    
+//    transClosure();
 //}
-///*
-//9
-//1 2
-//1 3
-//2 4
-//2 5
-//3 5
-//4 5
-//4 6
-//5 7
-//5 8
-//7 9
-//*/
