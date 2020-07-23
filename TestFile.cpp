@@ -1,39 +1,51 @@
 //#include<iostream>
-//#include<vector>
-//#define NODE 4
+//#include<cstring>
+//#pragma warning (disable : 4996)
 //using namespace std;
 //
-///* int graph[NODE][NODE] = {
-//   {0, 1, 1, 0},
-//   {0, 0, 1, 0},
-//   {1, 0, 0, 1},
-//   {0, 0, 0, 0}
-//}; */
+//class Data{
+//private:
+//    char* name;
+//    char* phone;
+//    int age;
+//public:
+//    Data(const char* _name, const char* _phone, int _age) {            //생성자는 char* 자료형만 받는다.
+//        name = new char[strlen(_name) + 1];
+//        strcpy(name, _name);
+//        phone = new char[strlen(_phone) + 1];
+//        strcpy(phone, _phone);
+//        age = _age;
+//    }
+//    Data(const Data& object) {
+//        name = new char[strlen(object.name) + 1];
+//        strcpy(name, object.name);
+//        phone = new char[strlen(object.phone) + 1];
+//        strcpy(phone, object.phone);
 //
-//int graph[NODE][NODE] = {
-//   {1, 0, 1, 0},
-//   {1, 0, 0, 1},
-//   {0, 1, 1, 0},
-//   {0, 1, 0, 0}
+//        age = object.age;
+//    }
+//    void output() {
+//        cout << name << endl;
+//        cout << phone << endl;
+//        cout << age << endl;
+//    }
+//    void modify(const char* val) {
+//        strcpy(name, val);
+//    }
+//    ~Data() {
+//        delete[]name;
+//        delete[] phone;
+//    }
 //};
 //
-//int result[NODE][NODE];
-//
-//void transClosure() {
-//    for (int i = 0; i < NODE; i++)
-//        for (int j = 0; j < NODE; j++)
-//            result[i][j] = graph[i][j];    //initially copy the graph to the result matrix
-//    for (int k = 0; k < NODE; k++)
-//        for (int i = 0; i < NODE; i++)
-//            for (int j = 0; j < NODE; j++)
-//                result[i][j] = result[i][j] || (result[i][k] && result[k][j]);
-//    for (int i = 0; i < NODE; i++) {          //print the result matrix
-//        for (int j = 0; j < NODE; j++)
-//            cout << result[i][j] << " ";
-//        cout << endl;
-//    }
-//}
-//
 //int main() {
-//    transClosure();
+//    Data* a = new Data("Shin", "010", 21);
+//    Data b(*a);
+//
+//    a->output();
+//    a->modify("aaa");
+//    b.output();
+//    delete a;
+//    b.output();
+//    return 0;
 //}

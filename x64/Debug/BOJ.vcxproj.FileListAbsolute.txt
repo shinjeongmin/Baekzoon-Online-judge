@@ -1,2 +1,4 @@
 C:\Users\sin37\source\repos\BOJ\x64\Debug\BOJ.exe
 C:\Users\sin37\source\repos\BOJ\x64\Debug\BOJ.pdb
+C:\source\repos\BOJ\x64\Debug\BOJ.exe
+C:\source\repos\BOJ\x64\Debug\BOJ.pdb
