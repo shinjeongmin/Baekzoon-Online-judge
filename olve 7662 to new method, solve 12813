@@ -1,0 +1,58 @@
+* [33mc5c3153[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m solve 2523, 5543
+* [33mbbd6863[m solve 14615
+* [33m7915781[m solve 2606
+* [33m2d8ea8d[m solve 7576
+* [33mc7be614[m Add .gitignore and inital cache
+* [33mb528301[m Create .gitignore
+* [33m570e804[m solve 3184
+* [33mc01fa15[m solve 2251, 2468
+* [33m9437f32[m solve 10026, 11403, 2583, unsolve 2251
+* [33m99b9a0d[m solve 2667
+* [33m3deded0[m solve 11123, 1012
+* [33m0370e9f[m solve 11724
+* [33m78158a0[m solve 1260
+* [33m2fb5975[m solve 7662 to new method, solve 12813
+* [33mfd72b87[m solve 7662
+* [33m751fde1[m solve 1302, 17219, 1620
+* [33mcfc2d6e[m solve 1764
+* [33m47229ce[m solve 1406
+* [33m6504419[m unsolve 1406
+* [33m5122258[m solve 10828, 9012, 10845, 1966
+* [33mafeac84[m solve 10974, 6603
+* [33mc63ae35[m solve 10815
+* [33m2dd8500[m solve 1181
+* [33mee6f79b[m solve 11946
+* [33m50ccd18[m unsolve 11946
+* [33m44af94c[m solve 11651, 10814, 10825
+* [33me3bed10[m solve 11650
+* [33m4315995[m unsolve 11650
+* [33m2455c1b[m No difference, just commit
+* [33m6f34caa[m solve 10811
+* [33m5e570e4[m Mistake : unsolve 1920, solved 10813
+*   [33ma5778e1[m Merge branch 'master' of https://github.com/shinjeongmin/Baekzoon-Online-judge
+[32m|[m[33m\[m  
+[32m|[m * [33me848598[m solve 1920 _ swap
+* [33m|[m [33m3446dd7[m solve 10813
+[33m|[m[33m/[m  
+* [33m75210bc[m solve 11656
+* [33m0c6a762[m solve 6581, 3613
+* [33m89aa270[m solve 10173
+* [33m83437d2[m solve 10823
+* [33ma822828[m solve 10822
+* [33m7898025[m solve 10824, 11586, 2743
+* [33m391b358[m deleted 15740 - unsolve
+* [33m9f33c11[m solve 16935, 1964, unsolve 15740
+* [33ma1c118e[m solve 4948
+* [33mc1d10be[m doesn't solve 4948
+* [33m20c270f[m solve 11576
+* [33m1b32b05[m solve 11575
+* [33m22a3b22[m solve 3053
+* [33m44bca1a[m solve 1076
+* [33mf43f705[m solve no.10984
+* [33me7c1c68[m solve no.2089
+* [33md1094f2[m solve no.10569 2163 2864
+* [33me442f0b[m solve no.16917
+* [33m04d8eac[m solve 2167 & 5597
+* [33mb07e929[m solve no.10994 star press 16
+* [33m8bbdbf9[m Solved BOJ no.10991 press stars
+* [33m78e816c[m Create BOJ repository
