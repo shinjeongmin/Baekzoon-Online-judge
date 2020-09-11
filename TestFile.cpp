@@ -1,26 +1,18 @@
 //#include <string>
 //#include <vector>
 //#include <iostream>
+//#include<algorithm>
 //using namespace std;
 //
-//string solution(string s) {
-//    string answer = "";
-//    answer = s;
-//
-//    if (answer.length() % 2 == 0) {//Â¦¼ö
-//        answer = answer[(answer.length() / 2) - 1] + answer[answer.length() / 2];
-//    }
-//    else {//È¦¼ö
-//        answer = answer[answer.length() / 2];
-//    }
-//    return answer;
-//}
-//
 //int main() {
-//    string s,answer;
-//    cin >> s;
-//    //answer = solution(s);
-//    answer = s[s.length() / 2 -1];
-//    answer += s[s.length() / 2];
-//    cout << answer;
+//    vector<int> v{ 1,0,0,1 };
+//    sort(v.begin(), v.end());
+//    
+//    do{
+//        for (auto i : v)
+//        {
+//            cout << i << " ";
+//        }
+//        cout << endl;
+//    }while (next_permutation(v.begin(), v.end()));
 //}
