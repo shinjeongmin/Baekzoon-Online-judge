@@ -387,5 +387,14 @@
     <ClCompile Include="INPC_I_19952.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2609.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1735.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2960.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
