@@ -1,21 +1,32 @@
 //#include <string>
 //#include <vector>
-//#include <iostream>
-//#include<algorithm>
+//#include <set>
+//#include<iostream>
+//
 //using namespace std;
 //
-//// 자연수 n의 수인수 분해 결과를 담은 정수 배열을 반환한다.
-//vector<int> factor(int n) {
-//	if (n == 1) return vector<int>(1, 1); // n=1인 경우는 예외
-//	vector<int> ret;
-//	for(int div = 2; n > 1; ++div)
-//		while (n % div == 0) {
-//			n /= div;
-//			ret.push_back(div);
-//		}
-//	return ret;
+//vector<int> solution(vector<int> numbers) {
+//    vector<int> answer;
+//    set<int> elements, PickAndSum;
+//
+//    // elements에 numbers집어넣기
+//    for (auto i : numbers) {
+//        elements.insert(i);
+//    }
+//
+//    // 중복되지 않는 2개 뽑기
+//    for (int i = 0; i < elements.length(); i++) {
+//        for (int j = i + 1; j < elements.length(); j++) {
+//            PickAndSum.insert(elements[i] + elements[j]);
+//        }
+//    }
+//
+//    return answer;
 //}
 //
 //int main() {
-//	
+//    int n;
+//    cin >> n;
+//    
+//    
 //}
