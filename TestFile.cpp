@@ -1,32 +1,34 @@
-//#include <string>
-//#include <vector>
-//#include <set>
-//#include<iostream>
-//
-//using namespace std;
-//
-//vector<int> solution(vector<int> numbers) {
-//    vector<int> answer;
-//    set<int> elements, PickAndSum;
-//
-//    // elements에 numbers집어넣기
-//    for (auto i : numbers) {
-//        elements.insert(i);
-//    }
-//
-//    // 중복되지 않는 2개 뽑기
-//    for (int i = 0; i < elements.length(); i++) {
-//        for (int j = i + 1; j < elements.length(); j++) {
-//            PickAndSum.insert(elements[i] + elements[j]);
-//        }
-//    }
-//
-//    return answer;
-//}
-//
-//int main() {
-//    int n;
-//    cin >> n;
-//    
-//    
-//}
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+	long long chili = 0;
+	long long result = 0;
+	cin >> chili;
+	int i = 0;
+
+
+
+	// 최대 제곱수
+	while (chili / (long long)(pow(7, i+1)) != 0) {
+		i++;
+	}
+
+	////cout << i << endl;
+
+	for (int j = i; j >= 0; j--) {
+		if(j != 0)
+			while(chili >= (long long)(pow(7, j))){
+				result += (long long)(pow(3,j));
+				chili -= (long long)(pow(7, j));
+			}
+		else
+			while (chili >= (long long)(pow(7, j))) {
+				result += 1;
+				chili -= (long long)(pow(7, j));
+			}
+	}
+
+	cout << result;
+}

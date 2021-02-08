@@ -1,4 +1,3 @@
-def solution(strings, n):
-    answer = []
-
-    return answer
+chili = int(input())
+while(chili >= 0):
+    for
