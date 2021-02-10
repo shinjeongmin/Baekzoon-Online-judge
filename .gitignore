@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrain IDE
 .idea
+
+# Virtual environment
+venv/*
