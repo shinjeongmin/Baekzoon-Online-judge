@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 using namespace std;
+// sort 해놓고 가장 유리한(가장 먼저인) 것부터 가져가는 방법으로 해결해야함.
 
 bool inhaCon(pair<int, int> i, pair<int, int> j) {
 	return i.first > j.first;
