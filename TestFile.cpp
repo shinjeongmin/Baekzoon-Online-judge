@@ -1,87 +1,61 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#define STANDARD_BENEFIT 1000
-
-using namespace std;
-
-int Max(vector<int> v) {
-	int max = -1;
-	for (int i = 0; i < max; i++)
-	{
-		if (v[i] > max)
-		{
-			max = v[i];
-		}
-	}
-
-	return max;
-}
-
-bool compare(int a, int b) {
-	return a > b;
-}
-
-
-
-int main(){
-	int hours, num_pc, res_num;
-	cin >> num_pc >> res_num >> hours;
-
-
-	vector<vector<int>> list;   //reservations[pcnumber][reservation]
-	vector <int> b;         //answer[pcnumber]
-
-	for (int i = 0; i <= num_pc; i++) {
-		vector<int> tmp_list;
-		list.push_back(tmp_list);
-		b.push_back(0);
-	}
-
-	for (int i = 0; i < res_num; i++) {
-		int x, y;
-		cin >> x >> y;
-
-		if (0 < y && y <= hours)
-			list[x].push_back(y);
-	}
-
-	for (int i = 1; i <= num_pc; i++) {
-		if (list[i].size() > 0)
-			sort(list[i].begin() + 1, list[i].end(), compare);
-	}
-
-	for (int i = 1; i <= num_pc; i++) {
-		int benefit = 0;
-
-		if (static_cast<int>(list[i].size()) > 0)
-		{
-			do
-			{
-				int tmp_b = 0;
-				int max_t = 0;
-				for (int j = 0; j < static_cast<int>(list[i].size()); j++)
-				{
-					if (max_t + list[i][j] > hours) break;
-
-					max_t += list[i][j];
-					tmp_b += list[i][j] * STANDARD_BENEFIT;
-				}
-
-				if (tmp_b > benefit)
-				{
-					benefit = tmp_b;
-				}
-
-			} while (next_permutation(list[i].begin() + 1, list[i].end()));
-		}
-
-		b[i] = benefit;
-	}
-
-	for (int i = 1; i <= num_pc; i++) {
-		cout << i << " " << b[i] << "\n";
-	}
-
-	return 0;
-}
+//#include <iostream>
+//#include <algorithm>
+//#include <vector>
+//#include <string>
+//using namespace std;
+//
+//bool inhaCon(pair<int, int> i, pair<int, int> j) {
+//	return i.first > j.first;
+//}
+//
+//bool biryCon(pair<int, int> i, pair<int, int> j) {
+//	return i.second > j.second;
+//}
+//
+//bool SumCon(pair<int, int> i, pair<int, int> j) {
+//	return i.first + i.second > j.first + j.second;
+//}
+//
+//int main() {
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(NULL);
+//	cout.tie(NULL);
+//
+//	int T;
+//	cin >> T;
+//	for (int t = 0; t < T; t++) {
+//		int N;
+//		cin >> N;
+//		vector<pair<int, int>> resource;
+//		int inhaTotal = 0, biryongTotal = 0;
+//		for (int j = 0; j < N; j++) {
+//			int temp1, temp2;
+//			cin >> temp1 >> temp2;
+//			pair<int, int> tempPair = make_pair(temp1, temp2);
+//			resource.push_back(tempPair);
+//		}
+//
+//		sort(resource.begin(), resource.end(), SumCon);
+//
+//		// 출력
+//		for (int i = 0; i < N; i++) {
+//			
+//		}
+//
+//		// 주의 : 다른 쪽이 가져간 자원을 못가져감
+//		for (int j = 0; j < N; j++) {
+//			if (j % 2 == 0) { // 인하차례
+//				auto indexPtr = max_element(resource.begin(), resource.end(), inhaCon);
+//				inhaTotal += (*indexPtr).first;
+//				resource.erase(indexPtr);
+//			}
+//			else // 비룡차례
+//			{
+//				auto indexPtr = max_element(resource.begin(), resource.end(), biryCon);
+//				biryongTotal += (*indexPtr).second;
+//				resource.erase(indexPtr);
+//			}
+//		}
+//		cout << inhaTotal - biryongTotal << "\n";
+//	}
+//}

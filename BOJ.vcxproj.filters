@@ -396,5 +396,14 @@
     <ClCompile Include="2960.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1929.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\문해기\Week2_1_12191619_ShinJeongMin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\문해기\Week2_2_12191619_ShinJeongMin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
