@@ -19,12 +19,6 @@ int ccw(xy a, xy b, xy c) {
 	else return 0; // 일직선
 }
 
-bool equalCCW(xy a, xy b) {
-	if (a.x == b.x && a.y == b.y)
-		return true;
-	return false;
-}
-
 void compareLineInclude(xy a,xy b, xy c, xy d) {
 	// 두 평행 선분에 포함되지 않는 임의의 점
 	xy Z(-432977,706954); // 케이스 뚫어버리기

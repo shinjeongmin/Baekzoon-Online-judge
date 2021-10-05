@@ -4,12 +4,12 @@
 using namespace std;
 
 vector<int> graph[50001];
-int dp[50001] = { 0, };
+int prefix[50001] = { 0, };
 
 void dfs(int idx) {
 	if (graph[idx].size() == 0) return;
 	for (auto i : graph[idx]) {
-		dp[i] += dp[idx] + 1;
+		prefix[i] += prefix[idx] + 1;
 		dfs(i);
 	}
 }
@@ -17,7 +17,7 @@ void dfs(int idx) {
 void init() {
 	for (int i = 0; i < 50001; i++) {
 		graph[i].clear();
-		dp[i] = 0;
+		prefix[i] = 0;
 	}
 }
 
@@ -40,7 +40,7 @@ int main() {
 		for (int n = 0; n < N; n++) {
 			string S;
 			cin >> S;
-			dp[n + 1] = S.length();
+			prefix[n + 1] = S.length();
 		}
 
 		// 탐색하면서 (자식의 길이) += (부모의 길이) + 1
@@ -49,7 +49,7 @@ int main() {
 
 		// 출력
 		for (int i = 1; i <= N; i++) {
-			cout << dp[i] << "\n";
+			cout << prefix[i] << "\n";
 		}
 	}
 }
