@@ -48,10 +48,10 @@
     <ClCompile Include="cpp\문해기\Week4_1_12171675_JeongChanLee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Week5_1_12191619_ShinJeongMin.cpp">
+    <ClCompile Include="cpp\문해기\Week5_1_12191619_ShinJeongMin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Week5_2_12191619_ShinJeongMin.cpp">
+    <ClCompile Include="cpp\문해기\Week5_2_12191619_ShinJeongMin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
