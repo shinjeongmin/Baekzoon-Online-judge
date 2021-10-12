@@ -54,5 +54,11 @@
     <ClCompile Include="cpp\문해기\Week5_2_12191619_ShinJeongMin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cpp\문해기\Week6_1_12191619_ShinJeongMin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\문해기\Week6_2_12191619_ShinJeongMin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

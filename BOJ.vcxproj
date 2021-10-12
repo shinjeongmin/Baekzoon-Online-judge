@@ -159,6 +159,10 @@
     <ClCompile Include="cpp\문해기\Week5_2_12191619_ShinJeongMin.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="cpp\문해기\Week6_1_12191619_ShinJeongMin.cpp" />
+    <ClCompile Include="cpp\문해기\Week6_2_12191619_ShinJeongMin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="TestFile.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
