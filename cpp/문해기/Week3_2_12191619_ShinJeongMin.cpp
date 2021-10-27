@@ -12,7 +12,6 @@ void init() {
 		for (int j = 0; j < 2001; j++) {
 			arr[i][j] = 0;
 		}
-		arr[i][i] = 0;
 		graph[i].clear();
 	}
 }
@@ -23,13 +22,13 @@ void initCheck() {
 	}
 }
 
-void dfs(int root, int idx, int N, int totalPath) {
+void dfs(int root, int idx, int totalPath) {
 	arr[root][idx] = totalPath;
 	check[idx] = 1;
 
 	for (int i : graph[idx]) {
 		if (check[i] == 0) {
-			dfs(root, i, N, totalPath + arr[idx][i]);
+			dfs(root, i, totalPath + arr[idx][i]);
 		}
 	}
 }
@@ -46,12 +45,12 @@ int main() { // cycle이 생기지 않는 그래프
 		int N;
 		cin >> N;
 		for (int i = 0; i < N-1; i++) {
-			int n, v, d;
-			cin >> n >> v >> d;
-			arr[n][v] = d;
-			arr[v][n] = d;
-			graph[n].push_back(v);
-			graph[v].push_back(n);
+			int u, v, d;
+			cin >> u >> v >> d;
+			arr[u][v] = d;
+			arr[v][u] = d;
+			graph[u].push_back(v);
+			graph[v].push_back(u);
 		}
 
 		// 간선이 1개인 노드 모두에 대해 탐색
@@ -59,7 +58,7 @@ int main() { // cycle이 생기지 않는 그래프
 			if (graph[i].size() == 1)
 			{
 				initCheck();
-				dfs(i, i, N, 0);
+				dfs(i, i, 0);
 			}
 		}
 

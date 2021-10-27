@@ -44,8 +44,7 @@ int main() {
 		}
 
 		// 탐색하면서 (자식의 길이) += (부모의 길이) + 1
-		int curIdx = 1;
-		dfs(curIdx);
+		dfs(1);
 
 		// 출력
 		for (int i = 1; i <= N; i++) {

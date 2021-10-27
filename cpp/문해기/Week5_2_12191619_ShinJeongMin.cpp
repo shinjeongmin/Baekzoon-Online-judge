@@ -1,17 +1,10 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <string>
 #define HOUSE 1000001
 using namespace std;
 int N, M;
 int house[HOUSE];
-
-void init() {
-	for (int i = 0; i < HOUSE; i++) {
-		house[i] = 0;
-	}
-}
 
 bool check(int len) {
 	int h = 1;

@@ -22,18 +22,18 @@ int main()
 			}
 		}
 
-		int x = 0, y = 0;
+		int y = 0, x = 0;
 		for (int i = 0; (unsigned int)i < str.size(); i++) {
-			arr[y][x] = str[i];
+			arr[x][y] = str[i];
 
 			if ((i + 1) % K == 0) {
-				x++;
+				y++;
 			}
 			else if ((i / K) % 2 == 1) { 
-				y--;
+				x--;
 			}
 			else {
-				y++;
+				x++;
 			}
 		}
 

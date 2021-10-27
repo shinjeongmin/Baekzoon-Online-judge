@@ -8,7 +8,7 @@ int prefix[5001] = { 0, };
 int signal[5001] = { 0, };
 
 void init() {
-	for (int i = 0; i < 501; i++) {
+	for (int i = 0; i < 5001; i++) {
 		prefix[i] = 0;
 		signal[i] = 0;
 	}
@@ -43,10 +43,7 @@ int main() {
 		}
 		compute();
 		for (int i = 1; i <= N - prefix[N]; i++) {
-			if(i == N-prefix[N])
-				cout << signal[i];
-			else
-				cout << signal[i] << " ";
+			cout << signal[i] << " ";
 		}
 		cout << "\n";
 	}
