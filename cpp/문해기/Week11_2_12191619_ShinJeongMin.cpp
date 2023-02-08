@@ -5,7 +5,7 @@ using namespace std;
 
 char paper[2000][2000];
 int T, N;
-struct paperInfo {
+struct paperInfo { // 빨간색 종이의 수의 크기, 파란색 종이의 수와 크기를 저장
 	int redNumber, redSize, blueNumber, blueSize;
 	paperInfo() { 
 		redNumber = 0;
@@ -29,7 +29,7 @@ int main() {
 				cin >> paper[i][j];
 			}
 		}
-		paperInfo answer = solution(N-1, N-1, N);
+		paperInfo answer = solution(N - 1, N - 1, N);
 		cout << answer.redNumber  << " " 
 			<< answer.redSize  << " " 
 			<< answer.blueNumber << " " 
@@ -37,7 +37,7 @@ int main() {
 	}
 }
 
-paperInfo solution(int x, int y, int size) {
+paperInfo solution(int x, int y, int size) { // x행 y열부터 size 크기 종이에서의 정답을 반환
 	paperInfo ret = paperInfo();
 	if (size == 1) {
 		if (paper[x][y] == 'R')
@@ -52,7 +52,7 @@ paperInfo solution(int x, int y, int size) {
 		}
 		return ret;
 	}
-	paperInfo status[5];
+	paperInfo status[5]; // 종이를 4개로 분할하여 각각 계산
 	status[1] = solution(x, y, size / 2);
 	status[2] = solution(x - size / 2, y, size / 2);
 	status[3] = solution(x, y - size / 2, size / 2);
@@ -64,9 +64,9 @@ paperInfo solution(int x, int y, int size) {
 		ret.blueNumber += status[i].blueNumber;
 		ret.blueSize += status[i].blueSize;
 	}
-	if (ret.redNumber == 0)
+	if (ret.redNumber == 0) // 4개로 나눈 종이에 빨간색 종이가 없으면 큰 하나의 파란색 종이
 		ret.blueNumber = 1;
-	if (ret.blueNumber == 0)
+	if (ret.blueNumber == 0) // 4개로 나눈 종이에 파란색 종이가 없으면 큰 하나의 빨간색 종이
 		ret.redNumber = 1;
 	return ret;
 }

@@ -1,12 +1,10 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <climits>
 using namespace std;
 
 int T, N, A, B, last, cnt;
-vector<pair<int,int>> rooms;
-vector<pair<int, int>>::iterator it = rooms.begin();
+vector<pair<int,int>> road;
 
 bool cmp(pair<int,int> a, pair<int, int> b) {
 	return a.first > b.first;
@@ -20,27 +18,24 @@ int main() {
 	cin >> T;
 	for (int t = 1; t <= T; t++) {
 		cnt = 0;
-		rooms = vector<pair<int, int>>();
+		road = vector<pair<int, int>>();
 		cin >> N;
 		for (int i = 1; i <= N; i++) {
 			cin >> A >> B;
-			rooms.push_back({ A, B });
+			road.push_back({ A, B }); // 각 방의 {평점, 거리} 입력
 		}
 
-		sort(rooms.begin(), rooms.end(), cmp);
-		int score = rooms[0].second;
+		sort(road.begin(), road.end(), cmp); // 점수 기준으로 내림차순 정렬
+		int score = road[0].second; // 가장 가까운 거리 저장
 		cnt++;
 		
-		for (auto room : rooms) {
-			if (score > room.second) {
+		for (auto room : road) {
+			if (score > room.second) { // 거리 또한 내림차순으로 정렬되는 개수를 세기
 				score = room.second;
 				cnt++;
 			}
 		}
 
-		/*cout << "rooms\n";
-		for (auto room : rooms)
-			cout << room.first << " " << room.second << "\n";*/
 		cout << cnt << "\n";
 	}
 }

@@ -17,12 +17,12 @@ struct Point {
 
 struct cmp{
 	bool operator()(Point& a, Point& b) {
-		if (a.dist == b.dist) {
+		if (a.dist == b.dist) { // 거리가 같은 경우 X가 작은 것, 다음 Y가 작은 것 기준
 			if (a.X == b.X)
 				return a.Y < b.Y;
 			return a.X < b.X;
 		}
-		return a.dist < b.dist;
+		return a.dist < b.dist; // 가까운 거리 우선
 	}
 };
 
@@ -33,20 +33,20 @@ int main() {
 
 	cin >> T;
 	for (int t = 0; t < T; t++) {
-		cin >> M >> N >> K;
-		priority_queue<Point, vector<Point>, cmp> stores;
+		cin >> M >> N >> K; // 기존 햄버거 가게 및 생성 정보, 자연수 K
+		priority_queue<Point, vector<Point>, cmp> stores; // 우선순위 큐
 
-		for (int i = 1; i <= M; i++) {
+		for (int i = 1; i <= M; i++) { // 처음부터 있는 가게
 			cin >> x >> y;
 			stores.push({ x,y,sqrt(pow(x,2) + pow(y,2)) });
-			if (stores.size() > K)
-				stores.pop();
+			if (stores.size() > K) // K 보다 큰 경우 가장 먼 것 제거
+				stores.pop(); // 우선순위 큐에는 K개의 가까운 가게정보만 저장
 		}
 
-		for (int i = 1; i <= N; i++) {
+		for (int i = 1; i <= N; i++) { // 새로 생기는 가게
 			cin >> x >> y;
-			stores.push({ x,y,sqrt(pow(x,2) + pow(y,2)) });
-			stores.pop();
+			stores.push({ x,y,sqrt(pow(x,2) + pow(y,2)) }); // 새로운 가게 우선순위 큐에 저장
+			stores.pop(); // 가장 먼 가게 제거
 			cout << stores.top().X << " " << stores.top().Y << "\n";
 		}
 	}
